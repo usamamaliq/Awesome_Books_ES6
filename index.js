@@ -4,8 +4,8 @@ import { listMenu, contactMenu, addNewMenu } from './modules/navigation.js';
 
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
-  let bookTitle = document.querySelector('.book-title');
-  let bookAuthor = document.querySelector('.book-author');
+  const bookTitle = document.querySelector('.book-title');
+  const bookAuthor = document.querySelector('.book-author');
   e.preventDefault();
   addBook(bookTitle.value, bookAuthor.value);
 });
