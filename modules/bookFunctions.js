@@ -16,7 +16,7 @@ const updateLocalStorage = () => {
 };
 
 const displayBooks = () => {
-  let booksContainer = document.querySelector('.books-container');
+  const booksContainer = document.querySelector('.books-container');
   booksContainer.innerHTML = '';
   for (let i = 0; i < bookList.length; i += 1) {
     if ((i % 2) === 0) {
@@ -41,7 +41,7 @@ const addBook = (bookTitle, bookAuthor) => {
   if (bookTitle === '' || bookAuthor === '') {
     alert('Fields cannot be empty');
   } else {
-    let books = new Book(bookTitle, bookAuthor);
+    const books = new Book(bookTitle, bookAuthor);
     bookList.push(books);
     updateLocalStorage();
     displayBooks();
@@ -56,6 +56,8 @@ const removeBook = (i) => {
   displayBooks();
 };
 
-window.removeBook= removeBook;
+window.removeBook = removeBook;
 
-export { removeBook, addBook, clearInput,  displayBooks };
+export {
+  removeBook, addBook, clearInput, displayBooks,
+};
