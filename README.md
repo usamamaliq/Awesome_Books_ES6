@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Click to view Project]()
+[Click to view Project](https://usamamaliq.github.io/Awesome_Books_ES6/)
 
 
 ## Getting Started
